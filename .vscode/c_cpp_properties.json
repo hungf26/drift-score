@@ -1,0 +1,43 @@
+{
+  "configurations": [
+    {
+      "name": "ESP-IDF",
+      "compilerPath": "${config:idf.toolsPath}/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
+      "compileCommands": [
+        "/Users/white/esp-project/host_v7/build/compile_commands.json"
+      ],
+      "includePath": [
+        "/Users/white/esp/v5.5/esp-idf/components/**",
+        "${env:IDF_PATH}/components/**",
+        "/Users/white/esp-project/host_v7/**"
+      ],
+      "browse": {
+        "path": [
+          "/Users/white/esp/v5.5/esp-idf/components",
+          "${env:IDF_PATH}/components",
+          "/Users/white/esp-project/host_v7"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "cStandard": "c23",
+      "compilerPathInCppPropertiesJson": "${config:idf.toolsPath}/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc",
+      "compileCommandsInCppPropertiesJson": [
+        "${config:idf.buildPath}/compile_commands.json"
+      ],
+      "mergeConfigurations": false,
+      "recursiveIncludes": {}
+    },
+    {
+      "name": "esp",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c17",
+      "cppStandard": "c++14",
+      "intelliSenseMode": "macos-clang-arm64"
+    }
+  ],
+  "version": 4
+}
